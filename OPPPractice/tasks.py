@@ -113,12 +113,66 @@
 # Develop a Student class with attributes for name, age, and grades.
 # Add a method to calculate the average grade.
 
+# solution
+# class Student:
+#     def __init__(self, name, age, grades):
+#         self.name = name
+#         self.age = age
+#         self.grades = grades
+    
+#     def avarage_grade(self):
+#         if len(self.grades) == 0:
+#             print(f"{self.name}, you don't have marks")
+#         else:
+#             total_marks = 0
+#             for mark in self.grades:
+#                 total_marks += mark
+#             print(f'So {self.name}, your avarage mark is {total_marks / len(self.grades)}')
+
+# Naiem = Student("MD Naiem Hosen", 17, [20,50,30]) 
+# Naiem.avarage_grade()
+
+# Comoleted
+
 # ---------------------------------------------------<<6>>------------------------------------------------
 
 # Library Catalog Class:
 
 # Create a LibraryCatalog class to manage a collection of books.
 # Include methods to add a book, remove a book, and display the available books.
+
+# solution
+# class Books_librery:
+#     def __init__(self):
+#         self.librery = []
+
+#     def add_book(self, book):
+#         if book in self.librery:
+#             print(f"The {book} book is already axist!!")
+#         else:
+#             self.librery.append(book)
+#             print(f"Book has added!")
+
+#     def remove_book(self, book):
+#         if not book in self.librery:
+#             print(f"No book axist calls {book}!!")
+#         else:
+#             self.librery.remove(book)
+#             print(f"Book has removed!")
+    
+#     def display_book(self):
+#         if len(self.librery) == 0:
+#             print("There is no book in this librery!!")
+#         else:
+#             print(f"Books are {self.librery}")
+
+# new_books_librery = Books_librery()
+# new_books_librery.add_book("DSA Basic")
+# new_books_librery.add_book("DSA Mestary")
+# new_books_librery.remove_book("DSA Basic")
+# new_books_librery.display_book()
+
+# Completed
 
 # ---------------------------------------------------<<7>>------------------------------------------------
 
@@ -127,11 +181,31 @@
 # Design an Employee class with attributes for name, position, and salary.
 # Implement a method to give a salary raise.
 
+# Solution
+# class Employee:
+#     def __init__(self, name, position, selary):
+#         self.name = name
+#         self.position = position
+#         self.selary = selary
+    
+#     def rise_selary(self, ammount):
+#         if self.selary > ammount:
+#             self.selary = ammount
+#             print(f"Hello MR {self.position} {self.name}! Bad news 😢. Your selary has downed to {self.selary}")
+#         else:
+#             self.selary = ammount
+#             print(f"Hello MR {self.position} {self.name}! Greate news 💕. You selary has rised to {self.selary}")
+
+# new_employee = Employee("MD Naiem Hosen", "Software Engineer", 20000)
+# new_employee.rise_selary(300)
+
+# Completed
+
 # ---------------------------------------------------<<8>>------------------------------------------------
 
 # Product Inventory Class:
 
-# Build a ProductInventory class to keep track of products in stock.
+# Build a Product Inventory class to keep track of products in stock.
 # Include methods for adding products, removing products, and displaying the current inventory.
 
 # ---------------------------------------------------<<9>>------------------------------------------------
