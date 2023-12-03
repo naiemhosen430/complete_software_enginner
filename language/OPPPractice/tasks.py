@@ -208,6 +208,13 @@
 # Build a Product Inventory class to keep track of products in stock.
 # Include methods for adding products, removing products, and displaying the current inventory.
 
+# solution
+# class Product:
+#     def __init__(self):
+#         self.product = {}
+    
+#     def add_product(self)
+
 # ---------------------------------------------------<<9>>------------------------------------------------
 
 # Shape Hierarchy:
@@ -221,3 +228,4 @@
 
 # Develop a Vehicle class with attributes for make, model, and year.
 # Add a method to check if the vehicle is a classic (e.g., more than 25 years old).
+
